@@ -6,6 +6,8 @@ import Hello from "./components/Hello";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
 import Form from "./components/Form";
+import InlineComponent from "./components/InlineComponent";
+import OutlineComponent from "./components/OutlineComponent";
 
 function App() {
   const person = {
@@ -23,6 +25,8 @@ function App() {
       <ConditionalJSX/>
       <Message/>
       <Counter/>
+      <InlineComponent />
+      <OutlineComponent />
     </div>
   );
 }
