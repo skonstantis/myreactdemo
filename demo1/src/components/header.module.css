@@ -1,0 +1,11 @@
+/* Author: Sotiris Konstantis */
+
+.header {
+  background-color: #f7ca18;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 2em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
