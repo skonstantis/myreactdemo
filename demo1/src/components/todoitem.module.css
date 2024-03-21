@@ -24,3 +24,7 @@
     cursor: pointer;
     color: white;
 }
+
+.completed{
+    text-decoration: line-through;
+}
