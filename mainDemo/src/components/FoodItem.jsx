@@ -1,9 +1,24 @@
-export default function FoodItem({ food }) {
+/* Author: Sotiris Konstantis */
+
+import styles from "./foodItem.module.css";
+
+export default function FoodItem({ food, setFoodId }) {
   return (
-    <div>
-        <img src={food.image} alt=""/>
-      <h1>{food.title}</h1>
-      <button>View Recipe</button>
+    <div className={styles.itemContainer}>
+      <img className={styles.itemImage} src={food.image} alt="" />
+      <div className={styles.itemContent}>
+        <p className={styles.itemName}>{food.title}</p>
+      </div>
+      <div className={styles.itemButtonContainer}>
+        <button
+          onClick={() => {
+            setFoodId(food.id);
+          }}
+          className={styles.itemButton}
+        >
+          View Recipe
+        </button>
+      </div>
     </div>
   );
 }
