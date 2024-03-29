@@ -1,0 +1,36 @@
+/* Author: Sotiris Konstantis */
+
+.itemContainer {
+    display: flex;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.imageContainer {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nameContainer {
+    margin-left: 50px;
+}
+
+.name {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.amountUnit {
+    font-size: larger;
+    font-weight: bold;
+}

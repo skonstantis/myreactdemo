@@ -1,7 +1,7 @@
 /* Author: Sotiris Konstantis */
 
 .innerContainer{
-    flex: 1;
+    flex: auto;
     padding: 10px;
     margin: 10px;
 }

@@ -4,6 +4,7 @@ import styles from "./foodDetails.module.css";
 
 import { useState } from "react";
 import { useEffect } from "react";
+import ItemList from "./ItemList";
 
 export default function FoodDetails({ foodId }) {
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
@@ -52,22 +53,8 @@ export default function FoodDetails({ foodId }) {
           </span>
         </div>
       </div>
-      {isLoading ? (
-        <p>Loading...</p>
-      ) : (
-        food.extendedIngredients.map((item) => (
-          <div>
-            <img
-              src={
-                `https://spoonacular.com/cdn/ingredients_100x100/` + item.image
-              }
-              alt=""
-            ></img>
-            <h3>{item.name}</h3>
-            <h3>{item.amount}{item.unit}</h3>
-          </div>
-        ))
-      )}
+      <h2>Ingredients</h2>
+      <ItemList food={food} isLoading={isLoading}/>
 
       <h2>Instructions</h2>
       <div className={styles.recipeInstructions}>
